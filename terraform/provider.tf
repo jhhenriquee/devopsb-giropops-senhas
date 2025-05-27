@@ -1,14 +1,14 @@
 terraform {
   backend "s3" {
     bucket = "descomplicando-terraform-devopze2025"
-    key    = "project"
+    key    = "statefiles/${var.project_name}/terraform.tfstate"
     region = "us-east-1"
-  } 
+  }
 
- required_providers {
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "5.84.0"
     }
   }
 }
