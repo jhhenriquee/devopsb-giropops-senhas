@@ -10,11 +10,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "key_name" {
-  description = "SSH key pair name"
-  type        = string
-}
-
 variable "project_name" {
   description = "SSH key pair name"
   type        = string

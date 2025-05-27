@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "descomplicando-terraform-devopze2025"
-    key    = "statefiles/${var.project_name}/terraform.tfstate"
+    key    = "statefiles/devopsb-project/terraform.tfstate"
     region = "us-east-1"
   }
 
