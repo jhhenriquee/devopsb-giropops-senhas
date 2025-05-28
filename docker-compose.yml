@@ -1,7 +1,7 @@
 services:
   giropops-senhas:
     build:
-      context: ./app/backend
+      context: ./app
     container_name: devops-backend
     ports:
       - "5000:5000"
