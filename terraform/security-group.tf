@@ -25,14 +25,14 @@ module "security_group" {
       from_port   = 80
       to_port     = 80
       protocol    = 6
-      description = "HTTP público"
+      description = "public HTTP"
       cidr_blocks = "0.0.0.0/0"
     },
     {
       from_port   = 443
       to_port     = 443
       protocol    = 6
-      description = "HTTPS público"
+      description = "public HTTPS"
       cidr_blocks = "0.0.0.0/0"
     }
   ]
@@ -42,7 +42,7 @@ module "security_group" {
       from_port   = 0
       to_port     = 0
       protocol    = "-1"
-      description = "Saída livre"
+      description = "out free"
       cidr_blocks = "0.0.0.0/0"
     }
   ]
