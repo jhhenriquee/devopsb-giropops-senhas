@@ -2,7 +2,7 @@ module "security_group" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "~> 4.0"
 
-  name        = "${var.project_name}-sg"
+  name        = "projetc_sg"
   description = "Security group para projeto ${var.project_name}"
   vpc_id      = module.vpc.vpc_id
 
