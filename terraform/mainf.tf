@@ -7,7 +7,7 @@ resource "aws_key_pair" "key_pair" {
   }
 }
 
-resource "aws_instance" "giropops_instance" {
+resource "aws_instance" "instance" {
   ami                    = "ami-0c55b159cbfafe1f0" # Ubuntu Server 22.04 LTS (verifique a região)
   instance_type          = var.instance_type
   key_name               = "${var.project_name}-key"
