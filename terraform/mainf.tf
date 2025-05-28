@@ -12,7 +12,7 @@ resource "aws_instance" "giropops_instance" {
   instance_type = var.instance_type
   key_name      = "${var.project_name}-key"
 
-  vpc_security_group_ids = [aws_security_group.projetc_sg.id]
+  vpc_security_group_ids = [module.security_group.this_security_group_id]
 
   tags = {
     Terraform = "true"
