@@ -34,13 +34,6 @@ module "security_group" {
       protocol    = 6
       description = "HTTPS público"
       cidr_blocks = "0.0.0.0/0"
-    },
-    {
-      from_port   = 8
-      to_port     = -1
-      protocol    = "icmp"
-      description = "Ping da Sky"
-      cidr_blocks = "200.182.147.34/32,201.76.120.130/32"
     }
   ]
 
