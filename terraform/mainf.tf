@@ -1,7 +1,6 @@
 
 module "infra" {
-#  source = "git::https://github.com/jhhenriquee/devopsb-giropops-terraform.git?ref=v0.0.1"
-  source = "git::https://github.com/jhhenriquee/devopsb-giropops-terraform.git?ref=main"
+  source = "git::https://github.com/jhhenriquee/devopsb-giropops-terraform.git?ref=v1.0.0"
 
   project_name           = "giropops"
   aws_region             = "us-east-1"
