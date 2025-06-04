@@ -8,6 +8,7 @@ Projeto base para integrar docker, aws, linux e terraform
 5. Feito user_data para iniciar aplicação automaticamente após o apply.
 6. Criado e versionado um repositório para o terraform, a partir deste repositório ele deverá puxar as confs. 
 https://github.com/jhhenriquee/devopsb-giropops-terraform
+7. Criada uma release para ser baixada no server, em vez de clonar o repositório por inteiro
 
 # TODO
 

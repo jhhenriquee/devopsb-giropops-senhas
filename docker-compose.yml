@@ -16,10 +16,11 @@ services:
   redis:
     image: redis:7
     restart: always
+    volumes:
+      - /mnt/persist-data/redis:/data
     networks:
       - app-network
 
 networks:
   app-network:
     driver: bridge
-
