@@ -1,0 +1,23 @@
+name: Docker Compose CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  docker-compose-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build application with Docker Compose
+        run: docker compose build --no-cache
+
+      - name: Validate docker-compose.yml
+        run: docker compose config
+
