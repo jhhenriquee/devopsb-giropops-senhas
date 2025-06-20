@@ -6,9 +6,6 @@ APPV="1.2.0"
 apt-get update -y
 apt-get install -y git curl unzip xfsprogs
 
-# Instala Docker
-curl -fsSL https://get.docker.com | bash
-
 # Detecta o primeiro disco adicional que não seja o root
 DEVICE=$(lsblk -ndo NAME,TYPE | awk '$2=="disk"{print $1}' | grep -v -e "^nvme0n1$" -e "^xvda$" | head -n1 || true)
 
